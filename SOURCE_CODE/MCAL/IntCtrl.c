@@ -52,11 +52,10 @@
 * \Parameters (out): None                                                      
 * \Return value:   : None
 *******************************************************************************/
-void IntCrtl_Init(void)
-{
+void IntCrtl_Init(void) {
 
 	/*TODO Configure Grouping\SubGrouping System in APINT register in SCB*/
-    APINT = 0xFA05|0x00001234;
+    APINT = 0xFA05 | 0x00001234;
     
     /*TODO : Assign Group\Subgroup priority in NVIC_PRIx Nvic and SCB_SYSPRIx Registers*/  
 
